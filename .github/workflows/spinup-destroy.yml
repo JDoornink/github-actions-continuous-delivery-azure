@@ -31,7 +31,7 @@ jobs:
       - name: Azure login
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS_TRIMBLE_PROD }}
+          creds: '${{ secrets.AZURE_CREDENTIALS_TRIMBLE_PROD }}'
 
       - name: Create Azure resource group
         if: success()
